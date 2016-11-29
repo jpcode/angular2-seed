@@ -1,0 +1,22 @@
+<h1> Module 2 </h1>
+ Other chunk.js was created for page2, if you want lazyLoad you need to add route as:
+	<div class="alert alert-success" role="alert">
+	  <strong>lazyLoad</strong> loadChildren: () =>  System.import('../page2/page2.module')
+	</div>
+
+	<div class="alert alert-success" role="alert">
+	  <strong>Style Guide </strong> <a href = "https://angular.io/docs/ts/latest/guide/style-guide.html"> You can see angular 2 code styles. </a>
+	</div>
+
+<p>
+    <a [routerLink]="['/home']" class="nav-link" href="#"> Return to home! </a>
+  </p>
+  	<div>
+	  <input type="radio" name="colors" (click)="color='lightgreen'">Green
+	  <input type="radio" name="colors" (click)="color='yellow'">Yellow
+	  <input type="radio" name="colors" (click)="color='cyan'">Cyan
+	  <input type="radio" name="colors" (click)="color=''" checked>Default
+	</div>
+
+  <h1 [myHighlight]="color" [defaultColor]="'violet'" > {{solution | mask: selection}} </h1>
+  <letter-buttons [(selection)]="selection"></letter-buttons>

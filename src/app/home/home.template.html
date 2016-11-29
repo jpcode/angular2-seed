@@ -1,0 +1,26 @@
+<h1 class="page-title">
+  {{ titleHome }}
+</h1>
+
+<div class="alert alert-success" role="alert">
+  <strong>Litle Demo</strong> Showing basics Angular2 features.
+</div>
+  <p>
+    <a [routerLink]="['/page2']" class="nav-link" href="#"> --> Go to page 2 </a>
+  </p>
+  	<my-coder-detail [coder]="selectedCoder"></my-coder-detail>
+
+      <h2> Best Living programmers </h2>
+      <ul class="list-group">
+      	<li class="list-group-item" *ngFor="let coder of coders"
+		  	[class.selected]="coder === selectedCoder"
+		   (click)="onSelect(coder)">
+			{{coder.name}}
+			<span class="tag tag-default tag-pill pull-xs-right"> {{coder.id}}</span>
+		</li>
+	 </ul>
+	
+	<br /> 	
+  <div class="alert alert-info" role="alert">
+  		<strong>Off Topic</strong>  You can see the list of scripts available in package.json:script
+  </div>

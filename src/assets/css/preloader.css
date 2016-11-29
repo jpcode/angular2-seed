@@ -1,0 +1,81 @@
+/* ========================================================================
+   Component: preloader
+ ========================================================================== */
+
+/*@noflip*/
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #E4E5E3;
+    background-image: -webkit-linear-gradient(90deg, #E4E5E3 10%, darken(#E4E5E3, 5%) 90%); /* Chrome 10+, Saf5.1+ */
+    background-image: -moz-linear-gradient(90deg, #E4E5E3 10%, darken(#E4E5E3, 5%) 90%); /* FF3.6+ */
+    background-image: -ms-linear-gradient(90deg, #E4E5E3 10%, darken(#E4E5E3, 5%) 90%); /* IE10 */
+    background-image: -o-linear-gradient(90deg, #E4E5E3 10%, darken(#E4E5E3, 5%) 90%); /* Opera 11.10+ */
+    background-image: linear-gradient(90deg, #E4E5E3 10%, darken(#E4E5E3, 5%) 90%); /* W3C */
+    z-index: 9999;
+    -webkit-transition: opacity 0.65s;
+    -o-transition: opacity 0.65s;
+    transition: opacity 0.65s;
+}
+
+/*@noflip*/
+.preloader-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    overflow: auto;
+    background-image: url(../img/preloader/logo_blank.png);
+    background-size: 250px 250px;
+}
+
+/*@noflip*/
+.preloader-progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    min-width: 0px;
+    background-image: url(../img/preloader/logo_full.png);
+    background-size: 250px 250px;
+}
+.preloader-text{
+    position: absolute;
+    top: 85px;
+    width: 100%;
+    text-align: center;
+    font-family: Arial !important;
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+.preloader-hidden {
+    display: none;
+}
+/* ngAnimate behavior*/
+.preloader-hidden-add {
+    opacity: 1;
+    display: block;
+}
+.preloader-hidden-add .preloader-progress {
+        -webkit-transition: -webkit-transform 0.4s ease;
+        -moz-transition: -moz-transform 0.4s ease;
+        -o-transition: -o-transform 0.4s ease;
+        transition: transform 0.4s ease;
+        -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        transform: scale(0);
+    }
+}
+.preloader-hidden-add-active {
+    opacity: 0;
+}

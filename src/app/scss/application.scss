@@ -1,0 +1,14 @@
+// set variable assets folder
+// ------------------------
+// ------------------------
+// you can add your own theme here
+$assets-path: "assets";
+@import "features";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+@import "../../../node_modules/font-awesome/scss/font-awesome";
+@import "../../../node_modules/glyphicons-halflings/scss/glyphicons-halflings";
+
+@import "../../../node_modules/pace/themes/pace-theme-flash";
+@import "../../../node_modules/animate.css/animate";
+@import "../../../node_modules/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox";

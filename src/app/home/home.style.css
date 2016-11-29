@@ -1,0 +1,10 @@
+ /* You can user scss / css webpack is all included */
+ .selected {
+    background-color: #CFD8DC !important;
+    color: white;
+  }
+  
+  .coders li.selected:hover {
+    background-color: #BBD8DC !important;
+    color: white;
+  }
