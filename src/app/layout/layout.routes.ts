@@ -1,6 +1,8 @@
 import { Routes, RouterModule }  from '@angular/router';
 import { Layout } from './layout.component';
 // noinspection TypeScriptValidateTypes
+declare var System : any;
+
 const routes: Routes = [
   { path: '', component: Layout, children: [
     { path: '', redirectTo: 'home', pathMatch: 'full' },

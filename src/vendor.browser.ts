@@ -21,6 +21,7 @@ import 'jquery';
 import 'tether';
 import 'bootstrap';
 import 'widgster'
+declare var ENV: string;
 
 if ('production' === ENV) {
   // Production

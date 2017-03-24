@@ -29,6 +29,8 @@ import 'zone.js/dist/zone';
 // Typescript emit helpers polyfill
 import 'ts-helpers';
 
+declare var ENV : string;
+
 if ('production' === ENV) {
   // Production
 
